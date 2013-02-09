@@ -92,7 +92,7 @@
     // Default JS Boolean constructor behaviour is to convert any non-0 and non-false input to a string. Only returns booleans. Does not raise an error when non-boolean is provided.
     
     var toBoolean = function(boolean,fallback){
-      boolFiltered = String(boolean).toLowerCase();
+      var boolFiltered = String(boolean).toLowerCase();
       return ( boolFiltered === 'false' || boolFiltered === 'true') ? Boolean(boolFiltered==='true') : (typeof fallback === 'boolean' ? fallback : false);
     };
     
