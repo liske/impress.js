@@ -93,7 +93,7 @@
     
     var toBoolean = function(boolean,fallback){
       boolFiltered = String(boolean).toLowerCase();
-      return ( boolFiltered === 'false' || boolFiltered) === 'true') ? Boolean(boolFiltered==='true') : (typeof fallback === 'boolean' ? fallback : false);
+      return ( boolFiltered === 'false' || boolFiltered === 'true') ? Boolean(boolFiltered==='true') : (typeof fallback === 'boolean' ? fallback : false);
     };
     
     // `byId` returns element with given `id` - you probably have guessed that ;)
